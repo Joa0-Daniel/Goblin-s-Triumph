@@ -1,19 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const contactForm = document.getElementById("contact-form");
+    var form = document.querySelector("form");
 
-    contactForm.addEventListener("submit", function (e) {
-        e.preventDefault();
+    form.addEventListener("submit", function (event) {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
 
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
+        if (name === "" || email === "" || message === "") {
+            alert("Por favor, preencha todos os campos do formulário.");
+            event.preventDefault(); // Impede o envio do formulário
+        }
+    });
+});
 
-        if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
-            alert("Por favor, preencha todos os campos.");
+document.addEventListener("DOMContentLoaded", function () {
+    var form = document.querySelector("form");
+
+    form.addEventListener("submit", function (event) {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        if (name === "" || email === "" || message === "") {
+            alert("Por favor, preencha todos os campos do formulário.");
+            event.preventDefault(); // Impede o envio do formulário
         } else {
-            // 
-            alert("Formulário enviado com sucesso!");
-            contactForm.reset();
+            alert("Mensagem enviada com sucesso!"); // Exibe uma mensagem de confirmação
         }
     });
 });
