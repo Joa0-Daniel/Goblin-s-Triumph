@@ -1,0 +1,164 @@
+body {
+    font-family: GFS Didot, sans-serif; /* Define a fonte usada no corpo do documento */
+    margin-top: 10; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    background-image: url(WhatsApp\ Image\ 2023-11-06\ at\ 13.55.01.jpeg); /* Define a imagem de fundo do corpo */
+    background-size: cover;  /* Faz a imagem de fundo cobrir toda a área visível */
+    color: #9942fc; /* Define a cor do texto como rosa */
+}
+
+header {
+    text-align: center; /* Centraliza o texto no elemento <header> */
+}
+
+nav {
+    background-color: transparent; /* Define a cor de fundo da barra de navegação como transparente */
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    margin: 0; /* Remove as margens padrão da lista */
+    text-align: center; /* Centraliza o texto na lista */
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens da lista em linha, em vez de em bloco */
+    margin: 0 10px; /* Adiciona margens horizontais de px aos itens da lista */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove a decoração de texto (geralmente sublinhado) dos links */
+    color: #c6b0e1; /* Define a cor do texto dos links como roxo */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+}
+
+.content {
+    text-align: center; /* Centraliza o texto no elemento com a classe "content" */
+    padding: 20px; /* Adiciona preenchimento de px ao redor do conteúdo */
+}
+
+.button {
+    display: inline-block; /* Exibe o elemento com a classe "button" como bloco em linha */
+    padding: 10px 20px; /* Adiciona preenchimento de px vertical e px horizontal */
+    background-color: #241a30; /* Define a cor de fundo do botão */
+    color: #c6b0e1; /* Define a cor do texto do botão como rosa */
+    text-decoration: none; /* Remove a decoração de texto dos links do botão */
+    font-weight: bold; /* Define o peso da fonte do botão como negrito */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+}
+
+.footer {
+    text-align: center; /* Centraliza o texto no elemento <footer> */
+    padding: 1px; /* Adiciona preenchimento de px ao redor do rodapé */
+    background-color: transparent; /* Define a cor de fundo do rodapé como transparente */
+    color: #9942fc; /* Define a cor do texto do rodapé como rosa */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Reduzi a altura para vh */
+    margin-top: 20px; /* Move o contêiner para cima */
+}
+
+.square-block {
+    background-color: #201633;
+    color: #9942fc;
+    padding: 20px;
+    margin: 100px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 470px; /* Move os blocos para cima */
+}
+
+.square-block h2 {
+    font-size: 24px;
+}
+
+.square-block p {
+    font-size: 18px;
+}
+
+
+.form-field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #201633;
+    color: #9942fc;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #c6b0e1;
+}
+
+
+
+form input,
+form textarea {
+    width: 95%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 4px solid #9942fc;
+    border-radius: 15px;
+    font-size: 16px;
+    margin-top: 20px; /* uma margem negativa movee o input para cima */
+}
+
+
+form input[type="submit"] {
+    background-color: #241a30;
+    color: #c6b0e1;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 150px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.text-block {
+    width: 300px;
+    background-color: #201633;
+    color: #9942fc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.text-block h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.text-block p {
+    font-size: 18px;
+    margin: 0;
+}
+
+html
+{
+  position:fixed;
+  width:100%;
+  height:100%;
+}
